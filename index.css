@@ -1,0 +1,45 @@
+body {
+    background-color: #262523;
+    font-family: "BigJohn";
+    margin: 0px;
+}
+
+.title {
+    text-align: center;
+    color: #FFAA00;
+}
+
+@font-face {
+    font-family: "BigJohn";
+    src: url("./assets/fonts/BigJohnPRO-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "BigJohn";
+    src: url("./assets/fonts/BigJohnPRO-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+.form {
+    text-align: center;
+    color: #FFAA00;
+}
+
+.submit {
+    background-color: #FFAA00;
+    color: #262523;
+    border: none;
+    text-decoration: none;
+    font-family: "BigJohn";
+    width: 170px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+}
