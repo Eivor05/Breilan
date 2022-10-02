@@ -13,13 +13,13 @@
     <a href="index.html"><img class="logo" src="/images/logo.svg"></a>
 </div>
 <div class="form">
-    <form>
+    <form action="insert.php" method="POST">
         <label id="navn">Navn</label><br>
-        <input type="text" placeholder="Navn Navnesen" id="navn"><br><br>
+        <input type="text" placeholder="Navn Navnesen" id="navn" name="name"""><br><br>
         <label id=klasse>Klasserom</label><br>
-        <input type="text" placeholder="hvilket klasserom e du på?" id="klasse"><br><br>
+        <input type="text" placeholder="Hvilket klasserom e du på?" id="klasse" name="room"><br><br>
         <label id="problem">Problem</label><br>
-        <textarea name="problem" id="problem" cols="30" rows="10" placeholder="my internet no werk :("></textarea><br><br>
+        <textarea name="problem" id="problem" cols="30" rows="10" placeholder="My internet no werk :(" name="prob"></textarea><br><br>
         <input type="submit" class="submit">
     </form>
 </div>

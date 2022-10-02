@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "BigJohn";
+    src: url("./assets/fonts/BigJohnPRO-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "BigJohn";
+    src: url("./assets/fonts/BigJohnPRO-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
 body {
     background-color: #262523;
     font-family: "BigJohn";
@@ -7,16 +18,6 @@ body {
 .title {
     text-align: center;
     color: #FFAA00;
-}
-
-@font-face {
-    font-family: "BigJohn";
-    src: url("./assets/fonts/BigJohnPRO-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "BigJohn";
-    src: url("./assets/fonts/BigJohnPRO-Bold.ttf") format("truetype");
-    font-weight: bold;
 }
 
 .form {
