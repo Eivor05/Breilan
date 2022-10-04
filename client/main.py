@@ -5,7 +5,7 @@ from playsound import playsound
 
 os.system("clear");
 
-host = "localhost"
+host = "db.pergynt.xyz"
 database = "support"
 user = "techsupport"
 password = "goin"

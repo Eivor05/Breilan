@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "db.pergynt.xyz";
 $username = "techsupport";
 $password = "goin";
 $dbname = "support";
