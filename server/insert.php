@@ -8,7 +8,7 @@ $name = $_POST["name"];
 $room = $_POST["room"];
 $prob = $_POST["prob"];
 
-phpinfo();
+
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
