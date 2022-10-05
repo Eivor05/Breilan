@@ -1,9 +1,15 @@
 <?php
-echo "yoyo";
 $servername = "db.pergynt.xyz";
 $username = "techsupport";
 $password = "goin";
 $dbname = "support";
+
+$name = $_POST["name"];
+$room = $_POST["room"];
+$prob = $_POST["prob"];
+echo $name;
+echo $room;
+echo $prob;
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -12,10 +18,6 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
-
-$name = $_POST["name"];
-$room = $_POST["room"];
-$prob = $_POST["prob"];
 
 if(empty($room)){
   echo "fuck you";
