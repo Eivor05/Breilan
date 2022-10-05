@@ -9,6 +9,8 @@ $room = $_POST["room"];
 $prob = $_POST["prob"];
 
 echo "sfsdfds";
+
+phpinfo();
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 echo $conn;
