@@ -3,6 +3,7 @@ $servername = "db.pergynt.xyz";
 $username = "techsupport";
 $password = "goin";
 $dbname = "support";
+print_r($_POST);
 
 $name = $_POST["name"];
 $room = $_POST["room"];
@@ -15,7 +16,7 @@ echo $prob;
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
-if (!$conn) {
+if ($conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
