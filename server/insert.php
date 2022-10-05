@@ -12,7 +12,7 @@ $prob = $_POST["prob"];
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
-if ($conn) {
+if (!$conn) {
   print_r("Connection failed: " . mysqli_connect_error());
 }
 
