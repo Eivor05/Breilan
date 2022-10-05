@@ -10,10 +10,10 @@ $prob = $_POST["prob"];
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
-
+echo $conn;
 // Check connection
 if (!$conn) {
-  print_r("Connection failed: " . mysqli_connect_error());
+  die("Connection failed: " . mysqli_connect_error());
 }
 
 if(empty($room)){
