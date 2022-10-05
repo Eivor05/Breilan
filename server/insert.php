@@ -1,4 +1,5 @@
 <?php
+echo "yoyo";
 $servername = "db.pergynt.xyz";
 $username = "techsupport";
 $password = "goin";
