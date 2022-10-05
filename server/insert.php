@@ -20,7 +20,7 @@ if(empty($room)){
   echo "fuck you";
 }
 
-$sql = "INSERT INTO tasks (pname,room,pdesc) VALUES ('$name', '$room', '$prob')";
+$sql = "INSERT INTO tasks (pname,room,prob) VALUES ('$name', '$room', '$prob')";
 
 if (mysqli_query($conn, $sql)) {
   echo "New record created successfully";
