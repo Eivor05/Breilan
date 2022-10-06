@@ -17,7 +17,7 @@ if (!$conn) {
 }
 
 if(empty($room)){
-  echo "fuck you";
+  die("fuck you");
 }
 
 $sql = "INSERT INTO tasks (pname,room,prob) VALUES ('$name', '$room', '$prob')";
