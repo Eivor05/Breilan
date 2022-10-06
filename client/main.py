@@ -38,18 +38,21 @@ while True:
 
         cursor.execute("SELECT * FROM tasks")
         record = cursor.fetchall()
-        if prevElement == None:
-            for i in record:
-                table.add_row(i[1], f"[bold]{i[2]}", i[3])
-            prevElement = record[-1]
+        if record != []:
+            if prevElement == None:
+                for i in record:
+                    table.add_row(i[1], f"[bold]{i[2]}", i[3])
+                prevElement = record[-1]
+                console.print(table)
+                continue
+            if prevElement != record[-1]:
+                table.add_row(record[-1][1], f"[bold]{record[-1][2]}", record[-1][3])
+                prevElement = record[-1]
+                os.system("clear")
+                console.print(table)
+                playsound("assets/notify.wav")
+        else:
             console.print(table)
-            continue
-        if prevElement != record[-1]:
-            table.add_row(record[-1][1], f"[bold]{record[-1][2]}", record[-1][3])
-            prevElement = record[-1]
-            os.system("clear")
-            console.print(table)
-            playsound("assets/notify.wav")
     else:
         break
     connection.close()
