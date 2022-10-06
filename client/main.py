@@ -7,13 +7,13 @@ from rich.table import Table
 
 os.system("clear");
 
-table = Table()
+table = Table(show_lines=True)
 table.add_column("Who")
 table.add_column("Where")
 table.add_column("Why")
 
 
-host = "localhost"
+host = "db.pergynt.xyz"
 database = "support"
 user = "techsupport"
 password = "goin"
