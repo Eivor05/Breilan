@@ -8,9 +8,9 @@ $name = $_POST["name"];
 $room = $_POST["room"];
 $prob = $_POST["prob"];
 
-$name = str_replace("\r\n"," ",$name);
-$room = str_replace("\r\n"," ",$room);
-$prob = str_replace("\r\n"," ",$prob);
+$name = str_replace("\n"," ",$name);
+$room = str_replace("\n"," ",$room);
+$prob = str_replace("\n"," ",$prob);
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
