@@ -15,14 +15,40 @@ body {
     margin: 0px;
 }
 
+@media (max-width: 500px) {
+    .logo {
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    .logo {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
 .title {
     text-align: center;
     color: #FFAA00;
 }
 
-.form {
+form {
     text-align: center;
     color: #FFAA00;
+}
+
+#navn {
+    width: 230px;
+}
+
+#klasse {
+    width: 230px;
+}
+
+#problem {
+    width: 230px;
 }
 
 .submit {
@@ -31,16 +57,11 @@ body {
     border: none;
     text-decoration: none;
     font-family: "BigJohn";
-    width: 170px;
-    height: 30px;
+    width: 240px;
+    height: 50px;
     margin-bottom: 20px;
 }
 
-.logo {
-    width: 25%;
-    margin-bottom: 20px;
-}
-
-.center {
+.logocenter {
     text-align: center;
 }
