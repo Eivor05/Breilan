@@ -65,3 +65,9 @@ form {
 .logocenter {
     text-align: center;
 }
+
+.hjelp {
+    text-align: center;
+    color: #FFAA00;
+    font-family: "BigJohn";
+}
