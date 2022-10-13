@@ -52,7 +52,7 @@ while True:
                 console.print(table)
                 playsound("assets/notify.wav")
         else:
-            console.print(table)
+            pass
     else:
         break
     connection.close()
