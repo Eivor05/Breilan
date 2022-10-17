@@ -1,8 +1,8 @@
 <?php
-$servername = "db.pergynt.xyz";
-$username = "techsupport";
-$password = "goin";
-$dbname = "support";
+$servername = $_ENV["DB_HOST"];
+$username = $_ENV["DB_NAME"];
+$password = $_ENV["DB_PASSWORD"];
+$dbname = $_ENV["DATABASE"];
 
 $name = $_POST["name"];
 $room = $_POST["room"];
