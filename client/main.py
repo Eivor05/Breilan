@@ -5,6 +5,11 @@ from playsound import playsound
 from rich.live import Live
 from rich.table import Table
 from rich.console import Console
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 os.system("clear");
 
@@ -16,10 +21,10 @@ table.add_column("Where")
 table.add_column("Why")
 
 
-host = "db.pergynt.xyz"
-database = "support"
-user = "techsupport"
-password = "goin"
+host = os.getenv("DB_HOST")
+database = os.getenv("DATABASE")
+user = os.getenv("DB_USER")
+password = os.getenv("DB_PASSWORD")
 
 
 #with Live(table, refresh_per_second=4):
