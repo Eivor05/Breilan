@@ -4,6 +4,8 @@ $username = $_ENV["DB_NAME"];
 $password = $_ENV["DB_PASSWORD"];
 $dbname = $_ENV["DATABASE"];
 
+echo $_ENV["DATABASE"];
+
 $name = $_POST["name"];
 $room = $_POST["room"];
 $prob = $_POST["prob"];
