@@ -13,6 +13,7 @@ body {
     background-color: #262523;
     font-family: "BigJohn";
     margin: 0px;
+    padding: 0px;
 }
 
 @media (max-width: 500px) {
@@ -29,40 +30,46 @@ body {
     }
 }
 
-.title {
-    text-align: center;
-    color: #FFAA00;
-}
-
 form {
     text-align: center;
     color: #FFAA00;
 }
 
-#navn {
+input, textarea {
+    font-family: "BigJohn";
+    font-size: medium;
+    background-color:#262523;
+    color: #FFAA00;
     width: 230px;
+    border: 2px solid;
+    border-color: #FFAA00;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-#klasse {
-    width: 230px;
+input:focus, textarea:focus {
+    border: 4px solid #FFAA00;
+    outline: none;
 }
 
-#problem {
-    width: 230px;
+::placeholder {
+    font-family: "BigJohn";
+    font-size: medium
 }
 
 .submit {
     background-color: #FFAA00;
     color: #262523;
-    border: none;
     text-decoration: none;
     font-family: "BigJohn";
+    font-size: medium;
+    font-weight: bold;
     width: 240px;
     height: 50px;
     margin-bottom: 20px;
 }
 
-.logocenter {
+.center {
     text-align: center;
 }
 
@@ -70,4 +77,42 @@ form {
     text-align: center;
     color: #FFAA00;
     font-family: "BigJohn";
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    max-width: 75%;
+    border: 2px solid #FFAA00;
+    border-radius: 5px;
+    color: #FFAA00;
+}
+
+th {
+    text-align: left;
+    border-right: 1px solid #FFAA00
+}
+
+td {
+    text-align: left;
+    border: 1px solid #FFAA00;
+    border-radius: 5px;
+}
+
+.slett {
+    background-color: #FFAA00;
+    border: none;
+    border-radius: 5px;
+    width: 75px;
+    height: 30px;
+    color: #262523;
+    text-align: center;
+    text-decoration: none;
+    font-family: "BigJohn";
+    font-weight: bold;
+}
+
+#slettborder {
+    border: none;
 }
