@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "BigJohn";
+    src: url("./assets/fonts/BigJohnPRO-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "BigJohn";
+    src: url("./assets/fonts/BigJohnPRO-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+body {
+    background-color: #262523;
+    font-family: "BigJohn";
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width: 500px) {
+    .logo {
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    .logo {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    max-width: 75%;
+    border: 2px solid #FFAA00;
+    border-radius: 5px;
+    color: #FFAA00;
+}
+
+th {
+    text-align: left;
+    border-right: 1px solid #FFAA00
+}
+
+td {
+    text-align: left;
+    border: 1px solid #FFAA00;
+    border-radius: 5px;
+}
+
+.slett {
+    background-color: #FFAA00;
+    border: none;
+    border-radius: 5px;
+    width: 75px;
+    height: 30px;
+    color: #262523;
+    text-align: center;
+    text-decoration: none;
+    font-family: "BigJohn";
+    font-weight: bold;
+}
+
+#slettborder {
+    border: none;
+}
