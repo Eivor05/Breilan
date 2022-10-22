@@ -9,17 +9,20 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
-<div class="logocenter">
-    <a href="index.html"><img class="logo" src="/images/logo.svg"></a>
+<div class="center">
+    <a href="index.html"><img class="logo" src="/server/assets/images/logo.svg"></a>
 </div>
 <div class="form">
     <form action="insert.php" method="POST">
         <label id="navn">Navn</label><br>
         <input type="text" placeholder="Navn Navnesen" id="navn" name="name"><br><br>
+
         <label id=klasse>Klasserom</label><br>
-        <input type="text" placeholder="Hvilket klasserom?(tallan på døra :D)" id="klasse" name="room"><br><br>
+        <input type="number" placeholder="(tallan på døra :D" id="klasse" name="room"><br><br>
+
         <label id="problem">Problem</label><br>
         <textarea id="problem" cols="30" rows="10" placeholder="My internet no werk :(" name="prob"></textarea><br><br>
+
         <input type="submit" class="submit">
     </form>
 </div>
