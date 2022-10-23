@@ -99,20 +99,3 @@ td {
     border: 1px solid #FFAA00;
     border-radius: 5px;
 }
-
-.slett {
-    background-color: #FFAA00;
-    border: none;
-    border-radius: 5px;
-    width: 75px;
-    height: 30px;
-    color: #262523;
-    text-align: center;
-    text-decoration: none;
-    font-family: "BigJohn";
-    font-weight: bold;
-}
-
-#slettborder {
-    border: none;
-}
