@@ -1,17 +1,25 @@
-import webbrowser
 import mysql.connector as mc
 import os
 from time import sleep
 from playsound import playsound
+from rich.live import Live
+from rich.table import Table
+from rich.console import Console
+import os
 from dotenv import load_dotenv
-
-os.system("nohup php -S localhost:8000 -t . > logs/my.log 2>&1 &")
-
-webbrowser.open("localhost:8000")
-print("yo")
 
 
 load_dotenv()
+
+os.system("clear");
+
+console = Console()
+
+table = Table(show_lines=True)
+table.add_column("Who")
+table.add_column("Where")
+table.add_column("Why")
+
 
 host = os.getenv("DB_HOST")
 database = os.getenv("DATABASE")
@@ -37,15 +45,23 @@ while True:
         record = cursor.fetchall()
         if record != []:
             if prevElement == None:
+                for i in record:
+                    table.add_row(i[1], f"[bold]{i[2]}", i[3])
+                prevElement = record[-1]
+                console.print(table)
                 continue
             if prevElement != record[-1]:
-                print("new record")
+                table.add_row(record[-1][1], f"[bold]{record[-1][2]}", record[-1][3])
+                prevElement = record[-1]
+                os.system("clear")
+                console.print(table)
                 playsound("assets/notify.wav")
         else:
             pass
     else:
         break
     connection.close()
-    sleep(10)
+    sleep(1)
 
 connection.close()
+
