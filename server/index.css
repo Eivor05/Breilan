@@ -87,15 +87,56 @@ table {
     border: 2px solid #FFAA00;
     border-radius: 5px;
     color: #FFAA00;
+    
 }
 
 th {
     text-align: left;
-    border-right: 1px solid #FFAA00
+    border-right: 1px solid #FFAA00;
+    padding: 10px;
 }
 
 td {
     text-align: left;
     border: 1px solid #FFAA00;
     border-radius: 5px;
+    padding: 4px;
+    padding-right: 10px;
+}
+
+/*header*/
+
+.nav__wrapper{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+.nav__item {
+    float: left;
+  }
+  
+.nav__item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+ a:hover {
+    background-color: #111;
+  }
+  
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.QandA {
+    color:  #FFAA00;
+    text-align: center;
 }
