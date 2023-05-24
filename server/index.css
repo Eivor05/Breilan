@@ -18,15 +18,14 @@ body {
 
 @media (max-width: 500px) {
     .logo {
-        width: fit-content;
-        margin-bottom: 20px;
+        width: fixed;
+      
     }
 }
 
 @media (min-width: 500px) {
     .logo {
-        width: 30%;
-        margin-bottom: 20px;
+        width: 114px;
     }
 }
 
@@ -125,11 +124,12 @@ td {
     padding: 14px 16px;
     text-decoration: none;
   }
+.nav__item a:hover {
+    background-color: #111;
+}
   
   /* Change the link color to #111 (black) on hover */
- a:hover {
-    background-color: #111;
-  }
+
   
 h1 {
     color: white;
@@ -140,3 +140,32 @@ h1 {
     color:  #FFAA00;
     text-align: center;
 }
+
+.nav__logo {
+    float: left;
+  }
+  
+.nav__logo a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+.nav__logo a:hover {
+    background-color: #111;
+}
+
+.parallelogram {
+	width: 800px;
+	height: 47px;
+	transform: skew(20deg);
+	background: #FFAA00;
+    float: right;
+}
+
+.rectangle {
+    height: 50px;
+    width: 100px;
+    background-color: #555;
+    float: left;
+  }
