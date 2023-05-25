@@ -14,20 +14,23 @@ body {
     font-family: "BigJohn";
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 
 @media (max-width: 500px) {
     .logo {
+        position: absolute;
         width: fixed;
-      
     }
 }
 
 @media (min-width: 500px) {
     .logo {
+        position: absolute;
         width: 114px;
     }
 }
+
 
 form {
     text-align: center;
@@ -156,16 +159,32 @@ h1 {
 }
 
 .parallelogram {
-	width: 800px;
-	height: 47px;
-	transform: skew(20deg);
+    position: absolute;
+    left: 34%;
+	width: 1000px;
+	height: 48px;
+	transform: skew(25deg);
 	background: #FFAA00;
     float: right;
 }
 
 .rectangle {
-    height: 50px;
-    width: 100px;
-    background-color: #555;
+    position: absolute;
+    height: 48px;
+    width: 105px;
+    transform: skew(-25deg);
+    background-color: #FFAA00;
     float: left;
   }
+
+.firkant {
+    position: absolute;
+    height: 30px;
+    width: 20px;
+    background-color: #FFAA00;
+    float: left;
+}
+
+#home {
+    margin-left: 144px;
+}
