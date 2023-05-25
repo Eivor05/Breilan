@@ -23,7 +23,7 @@
             <th>Problem</th>
             </tr>
             <?php
-            $servername = "db.pergynt.xyz";
+            $servername = "localhost";
             $username = "techsupport";
             $password = "goin";
             $dbname = "support";
